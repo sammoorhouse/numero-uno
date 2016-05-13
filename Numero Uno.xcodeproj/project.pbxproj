@@ -15,6 +15,9 @@
 		2438D9001C1F74A600DFB206 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2438D8FE1C1F74A600DFB206 /* LaunchScreen.storyboard */; };
 		2438D90B1C1F74A600DFB206 /* Numero_UnoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2438D90A1C1F74A600DFB206 /* Numero_UnoTests.swift */; };
 		2438D9161C1F74A600DFB206 /* Numero_UnoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2438D9151C1F74A600DFB206 /* Numero_UnoUITests.swift */; };
+		2438D9231C207C9F00DFB206 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2438D8F41C1F74A600DFB206 /* ViewController.swift */; };
+		2438D9251C207CC200DFB206 /* AppDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2438D9241C207CC200DFB206 /* AppDefaults.swift */; };
+		24F6004C1C20EBDA00097367 /* AppDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2438D9241C207CC200DFB206 /* AppDefaults.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,7 @@
 		2438D9111C1F74A600DFB206 /* Numero UnoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Numero UnoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2438D9151C1F74A600DFB206 /* Numero_UnoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Numero_UnoUITests.swift; sourceTree = "<group>"; };
 		2438D9171C1F74A600DFB206 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2438D9241C207CC200DFB206 /* AppDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDefaults.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,7 @@
 				2438D8FE1C1F74A600DFB206 /* LaunchScreen.storyboard */,
 				2438D9011C1F74A600DFB206 /* Info.plist */,
 				2438D8F91C1F74A600DFB206 /* Numero_Uno.xcdatamodeld */,
+				2438D9241C207CC200DFB206 /* AppDefaults.swift */,
 			);
 			path = "Numero Uno";
 			sourceTree = "<group>";
@@ -196,6 +201,7 @@
 				TargetAttributes = {
 					2438D8EE1C1F74A600DFB206 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = RK8KUSS6D5;
 					};
 					2438D9051C1F74A600DFB206 = {
 						CreatedOnToolsVersion = 7.2;
@@ -260,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2438D8FB1C1F74A600DFB206 /* Numero_Uno.xcdatamodeld in Sources */,
+				2438D9251C207CC200DFB206 /* AppDefaults.swift in Sources */,
 				2438D8F51C1F74A600DFB206 /* ViewController.swift in Sources */,
 				2438D8F31C1F74A600DFB206 /* AppDelegate.swift in Sources */,
 			);
@@ -277,7 +284,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2438D9231C207C9F00DFB206 /* ViewController.swift in Sources */,
 				2438D9161C1F74A600DFB206 /* Numero_UnoUITests.swift in Sources */,
+				24F6004C1C20EBDA00097367 /* AppDefaults.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,10 +412,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Numero Uno/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.littleplasticsquares.Numero-Uno";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -414,10 +426,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Numero Uno/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.littleplasticsquares.Numero-Uno";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -488,6 +503,7 @@
 				2438D91C1C1F74A600DFB206 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2438D91D1C1F74A600DFB206 /* Build configuration list for PBXNativeTarget "Numero UnoTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +512,7 @@
 				2438D91F1C1F74A600DFB206 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2438D9201C1F74A600DFB206 /* Build configuration list for PBXNativeTarget "Numero UnoUITests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +521,7 @@
 				2438D9221C1F74A600DFB206 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
